@@ -58,7 +58,7 @@ def portScanner():
          print ('[*] Scan Results for: ' + tgtIp)
    setdefaulttimeout(1)
 
-   for port in range(10003):
+   for port in range(650):
         t = threading.Thread(target=conScanner, args=(target,int(port)))
         t.start()
 
